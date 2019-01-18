@@ -8,7 +8,7 @@
 
 \documentclass[output=book,nonflat,modfonts,
   colorlinks,citecolor=brown, 
-%  draft,draftmode,  
+ draft,draftmode,  
 %  showindex,
 %  nobabel,
 %  booklanguage=german,
@@ -36,7 +36,7 @@
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 {\sloppy\tableofcontents}
- \include{chapters/preface}
+ % \include{chapters/preface}
  \include{chapters/acknowledgments}
  \include{chapters/abbreviations} 
 \mainmatter     
@@ -45,7 +45,7 @@
 %%%             Chapters                         %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{chapters/01}  %add a percentage sign in front of the line to exclude this chapter from book
+\include{chapters/01}
   
 % % copy the lines above and adapt as necessary
 
@@ -60,3 +60,8 @@
 
 % you can create your book by running
 % xelatex main.tex 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
