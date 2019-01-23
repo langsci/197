@@ -48,9 +48,21 @@ When one develops a new vocabulary to structure scientific investigation, there 
 
   For a concrete example, \citet{MarrPoggio1977} provide the visual control system of the fly \citep{ReichardtPoggio1976}. The computations performed on the visual input are (i) extracting movement information and (ii) providing position information, and these are instantiated as terms in a second order differential equation, analogous to a damped harmonic oscillator with time-varying driving forces. This equation is shown below, where  φ(t) is the position of an object on the retina of the fly and ω(t) is the angular speed of the object. On the left hand side, θ and k are inertial and frictional parameters, respectively. The crucial terms which represent the computations are  $D\left[\varphi \left(t\right)\right]$, which represents position information and is acquired from visual input by a “position computation,” and  $r\acute{{\varphi} }\left(t\right)$, which is “a velocity-dependent optomotor response,” the results of a “movement computation”. N(t) is a noise term.
 
-\begin{equation*}
-\theta \acute{{\varphi} }\left(t\right)+k\acute{{\varphi} }\left(t\right)+\mathit{k\omega} \left(t\right)=-D\left[\varphi \left(t\right)\right]-r\acute{{\varphi} }\left(t\right)+N\left(t\right)
-\end{equation*}
+\eabox{
+$$
+\theta\acute{\varphi} (t)
++
+k\acute{\varphi} (t)
++
+k\omega (t)
+=
+-D\left[ \varphi(t) \right]
+-
+r\acute{\varphi} (t)
++
+N (t)
+$$
+}
 
 In this example, what is being computed is in a certain sense physically grounded—the relevant “computational” terms describe \textit{forces} (by analogy to a damped, driven harmonic oscillator) in the equation of motion for retinal position of an object; moreover, these terms have physical units which can be measured in a fairly objective manner. Marr and Poggio state “the quantitative description [of the equation] could not have been obtained from single cell recordings or from histology. Furthermore, [the equation] is probably a prerequisite of any full understanding at the level of circuitry” (1977: 7). An important characteristic of this example is that the “computations” are computations of forces which influence quantities that can be observed physically, i.e. position and velocity. Before pursuing the importance of this aspect of the model, lets consider some general reactions to the levels of analysis.
 
@@ -78,7 +90,7 @@ A different sort of example provided by Marr is a cash register \citep{Marr1982}
 
 Thus for the fly example, the computational theory is sensible because of constraints on what we can measure, and for the cash register example, the computational theory is intuitive because of our experience with collecting objects and counting them. Together what these examples suggest is that a computational theory must be \textit{motivated} in some way, and better motivations are more physically grounded and/or more intuitive. Lets now consider whether these characteristics apply to conventional syntactic theories: do the computations involved in conventional theories bear similar motivations?
 
-  Chomsky and others would certainly argue that indeed, the computations described by the Minimalist program are well motivated. Consider the following from \citet{BerwickChomksy2016}, which addresses the Marrian levels directly:
+  Chomsky and others would certainly argue that indeed, the computations described by the Minimalist program are well motivated. Consider the following from \citet{BerwickChomsky2016}, which addresses the Marrian levels directly:
 
 Summarizing our answer to the “what” question so far, we have set out a very clear, bright line between us and all other animals: we, but no other animals, have Merge, and as a consequence we, but no other animal, can construct unbounded arrays of hierarchically structured expressions, with the ubiquitous property of displacement, eventually grounded on mind-dependent word-like, atomic elements, and with determinate interpretations at the interfaces at each stage of generation. We have also described, again pitched at an abstract level, the computational machinery for computing such expressions…All this might be taken as the answer to what David \citet{Marr1982} called the first level of analysis of any information processing system—what problem is being solved. How is the Basic Property computed? How does the language system assemble arbitrary hierarchical expressions?
 
@@ -146,20 +158,28 @@ To suggest that every “constructive” approach presupposes your system of met
 
 Another obstacle to the physical linguistics program is the conviction that humankind and human thought is special. Glorification of human as opposed to animal behavior is pervasive but always misguided:
 
+\begin{quote}
 Why did humans, but no other animal, take the power of recursion to create an open-ended and limitless system of communication? \citep{HauserEtAl2002}.
+\end{quote}
+
 
 Extraordinary acts of creation by children do not require the extraordinary circumstances of deafness or plantation Babels. The same kind of linguistic genius is involved every time a child learns his or her mother tongue \citep{Pinker2003}.
 
   I have spoken with plenty of young children, and “genius” is not the word I would use the describe their communication abilities. The stimuli that children experience in development are only impoverished when one assumes a set conception of language: it is a no-brainer that the vast majority of the objects in an “infinite set” will not be encountered by a child. It is also troubling that reverence for human behavior is central in much of the standard rhetoric. Consider the perspective of the Martian imagined in \citet{HauserEtAl2002}:
 
-\todo{are there quotations here?}  
+
+\begin{quote}
 If our martian naturalist were meticulous, it might note that the faculty mediating human communication appears remarkably different from that of other living creatures; it might further note that the human faculty of language appears to be organized like the genetic code- hierarchical, generative, recursive, and virtually limitless with respect to its scope of expression. \citep{HauserEtAl2002}.
+\end{quote}
+
 
   What is remarkable here is that the authors assume the Martian would come to these conclusions, i.e. that language is “hierarchical”, “generative”, “recursive”, and “infinite”? Clearly the authors have anthropomorphized the Martian, imposing their own conceptual framework on an entity that could think in vastly different ways from us. The same bias is applied to comparisons of human and non-human animal behavior:
 
+\begin{quote}
 Most current commentators agree that, although bees dance, birds sing, and chimpanzees grunt, these systems of communication differ qualitatively from human language. In particular, animal communication systems lack the rich expressive and open-ended power of human language (based on humans' capacity for recursion). The evolutionary puzzle, therefore, lies in working out how we got from there to here, given this apparent discontinuity. \citep{HauserEtAl2002}.
 
 Although many aspects of FLB [\textit{broad faculty of language}] are shared with other vertebrates, the core recursive aspect of FLN [\textit{narrow faculty of language}] currently appears to lack any analog in animal communication and possibly other domains as well. \citep{HauserEtAl2002}.
+\end{quote}
 
   There is a value judgment implied by phrases such as “lack the rich expressive and open-ended power.” From a more neutral perspective, we as researchers analytically construct understandings of the systems which govern non-human animal behavior, in the same way that we do so for human behavior. We can then compare those systems. Nothing about this analytical comparison requires us to think of humans as special and animals as lacking.
 
@@ -169,9 +189,12 @@ Although many aspects of FLB [\textit{broad faculty of language}] are shared wit
 
 Superficially, mind-body dualism has been loudly rejected in the biolinguistic program, and it seems to be frowned upon more generally in the communities of linguistics and cognitive science. In spite of this, dualism is alive but well-hidden. When there is subtle dualism, it is important as a coping mechanism to suppress any hints of it. The so-called narrow faculty of language (FLN) is, in all of the ways that matter, “the mind”, constructed in opposition to “the body”. Consider the following, regarding the relation of FLN to the sensory motor (SM) and conceptual intentional (CI) systems:
 
+\begin{quote}
 Faculty of language-narrow sense (FLN). FLN is the abstract linguistic computational system alone, independent of the other systems with which it interacts and interfaces. \citep{HauserEtAl2002}.
 
 We   propose   in   this   hypothesis   that   FLN   comprises   only   the   core computational  mechanisms  of  recursion  as  they  appear  in  narrow  syntax  and  the mappings  to  the  interfaces (i.e.  the  interfaces  with  mechanisms  of  speech  perception, speech  production,  conceptual  knowledge,  and  intentions) \citep{HauserEtAl2002}.
+\end{quote}
+
 
   Depending on how we interpret certain words in the above statement (i.e. \textit{abstract}, \textit{independent}, \textit{system}, \textit{interacts}, and \textit{interfaces}), the concept of the FLN is either nonsensical or just a rhetorical strategy for concealing dualism. First, what does “abstract” mean here? It cannot mean non-physical. But what would a \textit{non-abstract} “linguistic computational system” be? What makes the system \textit{abstract}, rather than \textit{concrete}? Most dictionaries would suggest that by calling something “abstract” we say that it exists in thought or as an idea but does not have a physical or concrete existence. Is that the sort of abstractness that the authors imply? If so, we have a dualistic conception. 
 

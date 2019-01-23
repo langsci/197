@@ -316,42 +316,17 @@ As a starting point for understanding the relation between cs- and gm-organizati
   A system which exhibits the clitic-like pattern meets only criterion (i): the system is always co-selected with some s-system, but not necessarily one with which it is +φ-coupled. The set of possible s-system hosts is often larger than it is for affix-like systems. A consequence of failing to meet criterion (ii) is that clitic-like systems can participate in φ configurations with systems they are not co-selected with. For example, possessive \{\textsc{poss}\} is always +φ coupled to an \{N\} system, but can be co-selected with \{V\}, \{\textsc{adv}\}, or \{\textsc{adv}\}. Examples are shown in the {\tablebelow}.
 
 \begin{table}
-\begin{tabularx}{\textwidth}{p{1cm}Qp{1cm}Q}
-\lsptoprule
-\raggedleft \{N\} \par
-
-\raggedleft \{V\}\par
-
-\raggedleft \{\textsc{adj}\}\par
-
-\raggedleft \{\textsc{adv}\} & \{\textsc{poss}\} co-selected with:
-
-\textit{the coffee’s taste} 
-
-\textit{the coffee Al drank’s taste}
-
-\textit{the coffee that is cold’s taste}
-
-\textit{the coffee Al drank yesterday’s taste} & \raggedleft \{N\}\par
-
-\raggedleft \{V\}\par
-
-\raggedleft \{\textsc{adj}\}\par
-
-\raggedleft \{\textsc{adv}\} & \{\textsc{D}\} co-selected with:
-
-\textit{the coffee}
-
-\textit{the tastes good coffee}
-
-\textit{the cold coffee}
-
-\textit{the strongly brewed coffee}\\
+\begin{tabularx}{\textwidth}{rQrQ}
+\lsptoprule                                                                                                                                                                      
+ \{N\} &                    \{\textsc{poss}\} co-selected with:               &        \{N\}&                  \{\textsc{D}\} co-selected with:                                 \\
+ \{V\}&                     \textit{the coffee’s taste}                       &        \{V\}&                  \textit{the coffee}                                              \\
+ \{\textsc{adj}\}&          \textit{the coffee Al drank’s taste}              &        \{\textsc{adj}\}&       \textit{the tastes good coffee}                                  \\
+ \{\textsc{adv}\} &            \textit{the coffee that is cold’s taste}       &           \{\textsc{adv}\} &         \textit{the cold coffee}                                   \\
+                &             \textit{the coffee Al drank yesterday’s taste} &                                       &         \textit{the strongly brewed coffee}\\
 \lspbottomrule
 \end{tabularx}
 \caption{\missingcaption}\label{tab:4:1}
-\end{table}
-\todo{redo this table with cells}
+\end{table} 
 
   Clitics and affixes are “bound” because they meet criterion (i). Some other grammatical cs-systems can be described as “free” because they meet a relaxed version of criterion (i) in which [x]\{x\} is \textit{usually} (rather than always) co-selected with another system. Determiners like \textit{a}, \textit{the}, and \textit{some}, are examples of cs-systems which are often but not necessarily co-selected with other systems. Specifically, these systems are often co-selected with \{N\}, sometimes with \{\textsc{adv}\} or \{\textsc{adj}\}, and yet can also be selected independently when a [\textsc{focus}] system couples to them (i.e. \textit{Al drank THE coffee}).
 
@@ -852,34 +827,39 @@ Interference is not necessarily destabilizing. The magnitude of interference dep
 
   To demonstrate macroscopically how excitation asymmetries mitigate against the adverse effects of interference, lets consider a toy example. Imagine two c-systems [c\textsubscript{1}] and [c\textsubscript{2}] which resonate with an s-system, \{s\}, which differentiates into subsystems \{s\textsubscript{1}\} and \{s\textsubscript{2}\}. Based on our standard hypotheses regarding c-s interactions and differentiation, we have the φ coupling matrix below, where φ\textsubscript{ij} is the strength of the force that system \textit{j} exerts on system \textit{i}. All coupling strengths are assumed to be proportional to source system excitations. We probe the φ stability patterns of the system under symmetric excitation (φ\textsubscript{ij} = φ\textsubscript{ji}) vs. asymmetric excitation (\textit{a}\textsubscript{1} > \textit{a}\textsubscript{2}, \textit{b}\textsubscript{1} > \textit{b}\textsubscript{2}, \textit{c}\textsubscript{21} > \textit{c}\textsubscript{12}). Note that \textit{c}\textsubscript{ij} in particular is the macroscopic manifestation of cc-s differentiation interference.
 
-φ \textit{=} 
+\eabox{
+$$
+\varphi \textit{=} 
+  \begin{matrix}
+  ?
+    \begin{matrix}
+      c_1&c_2&s_1&s_2\\
+      c_1:&?a_1&c_2:
+    \end{matrix}
+  a_2s_1:b_1c_{12}s_2:b_2c_{21}
+\end{matrix}
+$$
+}
 
-
-\begin{equation*}
-% \begin{matrix}
-% ?
-% \begin{matrix}{c}_{1} & {c}_{2} & {s}_{1} & {s}_{2}\\
-% {c}_{1}: & ?{a}_{1} & {c}_{2}:
-% \end{matrix}
-% {a}_{2}{s}_{1}:{b}_{1}{c}_{12}{s}_{2}:{b}_{2}{c}_{21}
-% \end{matrix}
-\end{equation*}
-\todo{commented out equation}
 
   The phase equations for the system are shown below. Each system has an intrinsic frequency \textit{f}, and its instantaneous phase velocity is the sum of this intrinsic frequency and coupling forces. The \textit{f} of s\textsubscript{1} and s\textsubscript{2} are fixed at 8 Hz in all simulations, while c-system intrinsic frequencies are Gaussian randomly distributed with mean µ = 8 Hz and standard deviation σ = 1. The surroundings \textit{S} are assumed to exert a random, time-varying force on each system,  ${\epsilon} _{i}$. 
 
-\begin{equation*}
-% \begin{matrix}{\varphi} _{\mathit{ij}}\\
-% \sin \\
-% ?{-\Phi} _{\mathit{ij}}\\
-% {\acute{{\theta} }}_{i}=\left[{2\mathit{\pi f}}_{i}+{\epsilon} _{i}\left(t\right)\right]+\sum _{j}\Box \end{matrix}
-\end{equation*}
-\todo{commented out equation}
+\eabox{
+$$ 
+\begin{matrix}{\varphi} _{{ij}}\\
+\sin \\
+?{-\Phi} _{{ij}}\\
+{\acute{{\theta} }}_{i}=\left[{2{\pi f}}_{i}+{\epsilon} _{i}\left(t\right)\right]+\sum _{j}\Box \end{matrix}
+$$
+}
+
   To assess stability statistically, we conduct 1000 simulations with random, uniformly distributed initial θ on the interval [-π, π]. The cs-resonance asymmetry \textit{a\textsubscript{i}} = 2\textit{b\textsubscript{i}} is imposed. Surroundings perturbations are modeled as a Gaussian random walk in a quadratic potential, where the fluctuations have standard deviation σ\textsubscript{S}:
 
-\begin{equation*}
+\eabox{
+$$
 {\epsilon} _{i}\left(t+1\right)={\epsilon} _{i}\left(t\right)+N\left(0,{\sigma} _{S}\right)-{{\epsilon} _{i}\left(t\right)}^{2}
-\end{equation*}
+$$
+}
  
 
   By varying the coupling strengths \textit{c}\textsubscript{12} and \textit{c}\textsubscript{21},  we observe that the φ of cs\textsubscript{1} only stabilizes when \textit{c}\textsubscript{21} << 1, and vice versa, cs\textsubscript{2} only stabilizes when \textit{c}\textsubscript{21} << 1. In other words, only one of cs\textsubscript{1} and cs\textsubscript{2} can be stable and highly excited. Of course a variety of additional factors can also influence stability, such as the size of the surroundings fluctuations, and differences in intrinsic frequencies of c-systems. It also stands to reason that more differentiations should reduce stability of all but the most highly excited cs-resonance.

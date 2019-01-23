@@ -186,7 +186,7 @@ The cs-resonance mechanism can be understood as follows. First, forces from the 
 
 \subsection{Coupling force types and valence} 
 
-To classify interactions between systems, we distinguish two types of coupling and two coupling valences. Relative phase coupling (φ-coupling) is an interaction that depends on relative phase φ and influences θ variables. The {\figurebelow} shows the phases of two systems on a phase circle, which is the space of possible phases. The effects of the relative phase (φ) coupling force are shown by the arrows: an attractive φ-force drives θ variables (which are also rotating counterclockwise) toward one another, resulting in a decrease in φ; a repulsive φ-force drives θ variables away from one another, resulting in an increase in φ. The coupling force is associated with a periodic sinusoidal potential function V(φ), such that  $F\left(\varphi \right)=\frac{-\mathit{dV}\left(\varphi \right)}{\mathit{d\varphi} }$ . The effect of the force on φ is analogous to a ball rolling down a hill while submerged in a viscous fluid, where the viscous force perfectly compensates for inertia: the force causes φ to change until it reaches the stable equilibrium of 0 (attractive force) or ±π (repulsive force), where it stops. Because θ is a periodic variable, it is convenient to map φ to the interval [-π,+π]. 
+To classify interactions between systems, we distinguish two types of coupling and two coupling valences. Relative phase coupling (φ-coupling) is an interaction that depends on relative phase φ and influences θ variables. The {\figurebelow} shows the phases of two systems on a phase circle, which is the space of possible phases. The effects of the relative phase (φ) coupling force are shown by the arrows: an attractive φ-force drives θ variables (which are also rotating counterclockwise) toward one another, resulting in a decrease in φ; a repulsive φ-force drives θ variables away from one another, resulting in an increase in φ. The coupling force is associated with a periodic sinusoidal potential function V(φ), such that  $F\left(\varphi \right)=\frac{-{dV}\left(\varphi \right)}{{d\varphi} }$ . The effect of the force on φ is analogous to a ball rolling down a hill while submerged in a viscous fluid, where the viscous force perfectly compensates for inertia: the force causes φ to change until it reaches the stable equilibrium of 0 (attractive force) or ±π (repulsive force), where it stops. Because θ is a periodic variable, it is convenient to map φ to the interval [-π,+π]. 
 
   
 \begin{figure}
@@ -216,14 +216,15 @@ To classify interactions between systems, we distinguish two types of coupling a
 \end{figure}
  
 
-  The equations below show the roles of φ- and e-forces in influencing how θ and \textit{e} variables change in time. The total φ- and e-forces a system experiences are sums over forces from pairwise interactions with other systems, plus forces from the surroundings, \textit{S}. These forces have coupling strengths/susceptibilities φ and $\varepsilon $, respectively. The φ-force from \textit{S} is negligible, because the surroundings are too large to exhibit a collective oscillation. However, the surroundings can exert non-negligible e-forces. The term \textit{f} is an intrinsic frequency of the system (angular velocity \textit{ω} = 2π\textit{f}), representing population-internal forces which promote collective oscillation. The operator  $\widehat {{E}}\left[\overrightarrow{{\theta} },\overrightarrow{{e}}\right]$ is a placeholder for mechanisms of e-organization, and we develop these in detail later on.
+  The equations below show the roles of φ- and e-forces in influencing how θ and \textit{e} variables change in time. The total φ- and e-forces a system experiences are sums over forces from pairwise interactions with other systems, plus forces from the surroundings, \textit{S}. These forces have coupling strengths/susceptibilities φ and $\varepsilon $, respectively. The φ-force from \textit{S} is negligible, because the surroundings are too large to exhibit a collective oscillation. However, the surroundings can exert non-negligible e-forces. The term \textit{f} is an intrinsic frequency of the system (angular velocity \textit{ω} = 2π\textit{f}), representing population-internal forces which promote collective oscillation. The operator  $\widehat {{E}}\left[\overrightarrow{{\theta}} ,\overrightarrow{{e}}\right]$ is a placeholder for mechanisms of e-organization, and we develop these in detail later on.
 
-\begin{equation*}
-{\acute{{\theta} }}_{i}={2\mathit{\pi f}}_{i}+{F}_{\mathit{\varphi S}}\left(S,{\theta} _{i}\right)+\sum _{j}{{{\Phi} _{\mathit{ij}}F}_{\varphi} \left({\varphi} _{\mathit{ij}},{e}_{i},{e}_{j}\right)}
-\end{equation*}
-\begin{equation*}
-{\acute{{e}}}_{i}=\text{Ê}\left[\overrightarrow{{\theta} },\overrightarrow{{e}}\right]+{F}_{\mathit{eS}}\left(S,{e}_{i}\right)+\sum _{j}{{{\varepsilon} _{\mathit{ij}}F}_{e}\left({\varphi} _{\mathit{ij}},{e}_{i},{e}_{j}\right)}
-\end{equation*}
+\eabox{$$
+{\acute{{\theta}} }_{i}={2{\pi f}}_{i}+{F}_{{\varphi S}}\left(S,{\theta} _{i}\right)+\sum _{j}{{{\Phi} _{{ij}}F}_{\varphi} \left({\varphi} _{{ij}},{e}_{i},{e}_{j}\right)}
+$$}
+
+\eabox{$$
+{\acute{{e}}}_{i}=\text{Ê}\left[\overrightarrow{{\theta}} ,\overrightarrow{{e}}\right]+{F}_{{eS}}\left(S,{e}_{i}\right)+\sum _{j}{{{\varepsilon} _{{ij}}F}_{e}\left({\varphi} _{{ij}},{e}_{i},{e}_{j}\right)}
+$$}
 
   Some properties of φ- and e-coupling can be derived from our microscale conceptualization. For one, the valences of φ- and e-forces (i.e. the signs of elements of matrices φ and $\varepsilon $) are correlated: attractive and mutually excitatory coupling tend to co-occur, and repulsive and mutually inhibitory coupling tend to co-occur. The basis for this correlation is the association of [+] valence forces with predominantly excitatory post-synaptic targets of interpopulation synapses, and conversely the association of [-] valence forces with predominantly inhibitory neurons as post-synaptic targets. These microscale patterns are illustrated below. When the excitatory neurons in population A project primarily to excitatory neurons in population B, the effect of spikes of those neurons is to attract θ\textsubscript{B} to θ\textsubscript{A} and augment \textit{e}\textsubscript{B}; when excitatory neurons in B project primarily to inhibitory neurons in B, their effect is to repel θ\textsubscript{B} from θ\textsubscript{A} and diminish \textit{e}\textsubscript{B}. 
 
@@ -341,31 +342,32 @@ While the stabilizing regime of Ê enforces an approximate temporal invariance o
 
   There are a couple alternative formal approaches to representing reorganization mappings. One is to define a relative quantal excitation state vector  $\overrightarrow{{e}}$, where each dimension corresponds to a different excited cs-system. The value in a dimension is an integer from 1 to \textit{n}, where \textit{n} is the number of s-systems which occupy distinct e-levels, and the value corresponds to excitation rank order of the corresponding system. The canonical reorganization mapping in this scheme is shown below.
 
-\begin{equation*}
-{\text{Ê}}^{\mathit{cr}}\left(\overrightarrow{{e}}\right):e\rightarrow \left[e\mathit{mod}n\right]+1
-\end{equation*}
+\eabox{$$
+{\text{Ê}}^{{cr}}\left(\overrightarrow{{e}}\right):e\rightarrow \left[e{mod}n\right]+1
+$$}
 
   Another formalization uses a cyclic permutation matrix. In this case we define the e-state as a binary matrix Ë where each column corresponds to a level of the e-potential and each row to a system (so, a value of 1 in row \textit{n}, column \textit{m}, entails that system \textit{n} occupies excitation level \textit{m}). Repeated action of the permutation matrix Ê on Ë results in a return to the initial pattern. 
 
-% \begin{equation*}
-% \text{Ê}^{\mathit{cr}}=
-% \left[
-%   \begin{matrix}
-%   0 & 0 & 1\\
-%   1 & 0 & 0\\
-%   0 & 1 & 0
-%   \end{matrix}
-% \right],
-% {\text{Ë}}_{1}=
-% \left[
-%   \begin{matrix}
-%   1 & 0 & 0\\
-%   0 & 1 & 0\\
-%   0 & 0 & 1
-%   \end{matrix}
-% \right]
-% \end{equation*}
-\todo{commented out matrix}
+\ea
+$$
+\text{Ê}^{{cr}}=
+\left[
+  \begin{matrix}
+  0 & 0 & 1\\
+  1 & 0 & 0\\
+  0 & 1 & 0
+  \end{matrix}
+\right],
+{\text{Ë}}_{1}=
+\left[
+  \begin{matrix}
+  1 & 0 & 0\\
+  0 & 1 & 0\\
+  0 & 0 & 1
+  \end{matrix}
+\right]
+$$
+\z
 
 
   The e-state vector and matrix representations are somewhat less general than the e-organization representation, for reasons that will become clear later. In contrast, the e-organization representation has greater flexibility and we make extensive use of it. The canonical reorganization is a useful construct because many of the phenomena we are interested in can be analyzed in relation to the canonical mapping.
