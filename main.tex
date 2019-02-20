@@ -1,24 +1,12 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%     Language Science Press Master File       %%%
-%%%         follow the instructions below        %%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-% Everything following a % is ignored
-% Some lines start with %. Remove the % to include them
-
 \documentclass[output=book,nonflat,modfonts,
   colorlinks,citecolor=brown, 
- draft,draftmode,  
-%  showindex,
-%  nobabel,
-%  booklanguage=german,
-%  multiauthors,
+%  draft,draftmode,  
+%  showindex  
 		  ]{langsci/langscibook}    
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%          additional packages                 %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
@@ -46,7 +34,7 @@
 {\sloppy\tableofcontents}
  % \include{chapters/preface}
  \include{chapters/acknowledgments}
- \include{chapters/abbreviations} 
+%  \include{chapters/abbreviations} 
 \mainmatter     
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -61,21 +49,14 @@
 \include{chapters/06}
 \include{chapters/07}
 \include{chapters/08}
-  
-% % copy the lines above and adapt as necessary
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Backmatter                       %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{localseealso.tex} 
-% There is normally no need to change the backmatter section
+% \input{localseealso.tex} 
 \input{backmatter.tex} 
 \end{document} 
-
-% you can create your book by running
-% xelatex main.tex 
-
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
