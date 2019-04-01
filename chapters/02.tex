@@ -7,7 +7,7 @@ The o/el framework and conventional frameworks offer very different conceptualiz
 
 \section{Concept systems}
 
-How do complex patterns of thought arise in the brain? For example, consider the sentence \textit{Al drinks coffee}. In the conventional metaphor, a phrase is a “structure of objects” that arises from the merger of smaller objects. These objects—words and phrases, i.e. “linguistic units”—are also the sort of objects that can be “containers”. Thus words contain meanings and phrases contain words. Connected object representations as below use \isi{vertical orientation} and connection schemas to encode these containment relations, of the sort shown in {\figref{fig:2:1}}.
+How do complex patterns of thought arise in the brain? For example, consider the sentence \textit{Al drinks coffee}. In the conventional metaphor, a phrase is a “structure of objects” that arises from the merger of smaller objects. These objects -- words and phrases, i.e. “linguistic units” -- are also the sort of objects that can be “containers”. Thus words contain meanings and phrases contain words. Connected object representations as below use \isi{vertical orientation} and connection schemas to encode these containment relations, of the sort shown in {\figref{fig:2:1}}.
 
   
 \begin{figure}
@@ -55,7 +55,7 @@ Before a \isi{speaker} experiences a meaning associated with [Al], [drink], and 
 
 \subsection{Concept populations as systems with surroundings} 
 
-To be explicit, we model each concept population as a \textit{concept system} with a time-varying state vector. Interactions between systems are forces, which depend on system states. Moreover, each system has a \isi{surroundings}. These constructs—\textit{systems}, \textit{states}, \textit{forces}, and \textit{surroundings}—are derived from our microscopic population model. Systems are macro-scale models of populations. System states derive from integrating over population microstates. Forces between systems derive from integrating over the influences of synaptic projections from neurons in one population to another. The \isi{surroundings} derives from integrating microscale influences, the origins of which we do not differentiate as systems.\footnote{The \isi{surroundings} is where we locate our ignorance in a given analysis. We can always improve our analyses by constructing new systems from the \isi{surroundings}, but so doing, the analyses become more complex. We often refer to the influence of the \isi{surroundings}, and this should be viewed as a strategy of simplification.} These constructs are illustrated in {\figref{fig:2:4}}.
+To be explicit, we model each concept population as a \textit{concept system} with a time-varying state vector. Interactions between systems are forces, which depend on system states. Moreover, each system has a \isi{surroundings}. These constructs -- \textit{systems}, \textit{states}, \textit{forces}, and \textit{surroundings} -- are derived from our microscopic population model. Systems are macro-scale models of populations. System states derive from integrating over population microstates. Forces between systems derive from integrating over the influences of synaptic projections from neurons in one population to another. The \isi{surroundings} derives from integrating microscale influences, the origins of which we do not differentiate as systems.\footnote{The \isi{surroundings} is where we locate our ignorance in a given analysis. We can always improve our analyses by constructing new systems from the \isi{surroundings}, but so doing, the analyses become more complex. We often refer to the influence of the \isi{surroundings}, and this should be viewed as a strategy of simplification.} These constructs are illustrated in {\figref{fig:2:4}}.
 
   
 \begin{figure}
@@ -79,7 +79,7 @@ To construct a change rule for system states, we must define the \isi{state spac
 
   For exposition, we rename the excitation component x\textsubscript{exc} as ``e" and refer to \isi{phase angle} (θ) simply as \textit{phase}. We make a heuristic simplification by assuming the dynamics of e and θ are separable due to differences in relevant timescales. This stipulated separation entails that there is a fast timescale τ\textsubscript{e} such that changes in e occur over intervals τ\textsubscript{e}, and that τ\textsubscript{e} is much smaller than τ\textsubscript{θ} = 1/\textit{f}, the period of the \isi{oscillation}. Hence in our analyses of the dynamics of e and θ, intermittent abrupt changes in e are assumed not to interact directly with θ. Furthermore, the \isi{intrinsic frequency} \textit{f}\textsubscript{0} is considered to be slowly-varying on utterance timescales, and for many purposes can be conceptualized as a fixed parameter. 
 
-  Given the above construction, the \isi{state space} for one \isi{concept system} is the union of subspaces for e and θ. We do not attempt to provide a more detailed derivation of these variables and their separation from a microscopic, population-scale model. Nonetheless, we speculate that \isi{oscillation} arises from intra-population synaptic interactions, intrinsic neuronal dynamics, cortical microcircuit structure, and coupling between neurons and the extracellular medium; excitation relates more directly to the number of neurons which participate in a population \isi{oscillation}.  
+  Given the above construction, the \isi{state space} for one \isi{concept system} is the union of subspaces for e and θ. We do not attempt to provide a more detailed derivation of these variables and their separation from a microscopic, population-scale model. Nonetheless, we speculate that \isi{oscillation} arises from intra-pop\-u\-la\-tion synaptic interactions, intrinsic neuronal dynamics, cortical microcircuit structure, and coupling between neurons and the extracellular medium; excitation relates more directly to the number of neurons which participate in a population \isi{oscillation}.  
 
 \subsection{Meaning experiences are trajectories in state space}
 
@@ -92,10 +92,9 @@ The utterance \textit{Al drinks coffee} does not “have” a meaning. An uttera
 \label{fig:2:6}
 \end{figure}
  
+  The e,θ \isi{state space} is 2-di\-men\-sional for one \isi{concept system}, and 2\textit{n}-di\-men\-sional for \textit{n} concept systems. Moreover, when \textit{n} concept systems are excited, a \isi{relational meaning} experience associated with those systems is a stable periodic orbit in the \textit{n}{}-di\-men\-sional θ subspace. Typically we are interested in meaning experiences associated with systems whose e > λ\textsubscript{e}, i.e. excited systems. We will sometimes refer to these as \textit{attended} meanings, because we imagine that the relevant concept systems have e values which are sufficient to support conscious attention to a \isi{meaning experience}. In contrast, subconscious experience of meaning occurs via active, unexcited systems.
 
-  The e,θ \isi{state space} is 2-dimensional for one \isi{concept system}, and 2\textit{n}{}-dimensional for \textit{n} concept systems. Moreover, when \textit{n} concept systems are excited, a \isi{relational meaning} experience associated with those systems is a stable periodic orbit in the \textit{n}{}-dimensional θ subspace. Typically we are interested in meaning experiences associated with systems whose e > λ\textsubscript{e}, i.e. excited systems. We will sometimes refer to these as \textit{attended} meanings, because we imagine that the relevant concept systems have e values which are sufficient to support conscious attention to a \isi{meaning experience}. In contrast, subconscious experience of meaning occurs via active, unexcited systems.
-
-  Note that e and θ state variables are analytical constructs which we can attempt to derive from a higher-dimensional microscale \isi{state space}. This derivation procedure uses methods of projection and integration in order to reduce dimensionality. Accordingly, the \isi{state space} is always constructed \textit{ad hoc} to accommodate the systems which we consider relevant for a given analysis.\footnote{For example, we are currently ignoring the fact that \textit{drinks} is associated with concept systems which are grammatical in nature, such as person, number, and \isi{tense}. In later analyses we explicitly construct such systems, but for the current purpose of introducing the o/el framework, we keep things simple.} The \isi{state space} construction procedure is (i) stipulate a set of concept systems; (ii) construct a space with e and θ dimensions for each system; (iii) construct the union of these spaces by combining them orthogonally. The picture to have in mind is shown in {\figref{fig:2:7}}. 
+  Note that e and θ state variables are analytical constructs which we can attempt to derive from a higher-di\-men\-sional microscale \isi{state space}. This derivation procedure uses methods of projection and integration in order to reduce dimensionality. Accordingly, the \isi{state space} is always constructed \textit{ad hoc} to accommodate the systems which we consider relevant for a given analysis.\footnote{For example, we are currently ignoring the fact that \textit{drinks} is associated with concept systems which are grammatical in nature, such as person, number, and \isi{tense}. In later analyses we explicitly construct such systems, but for the current purpose of introducing the o/el framework, we keep things simple.} The \isi{state space} construction procedure is (i) stipulate a set of concept systems; (ii) construct a space with e and θ dimensions for each system; (iii) construct the union of these spaces by combining them orthogonally. The picture to have in mind is shown in {\figref{fig:2:7}}. 
 
   
 \begin{figure}
@@ -105,7 +104,7 @@ The utterance \textit{Al drinks coffee} does not “have” a meaning. An uttera
 \end{figure}
  
 
-  The \isi{state space} is neither permanent nor a physical space. It is a heuristic tool that we construct strategically to meet the needs of a given analysis. Describing [Al], [drinks], and [coffee] with orthogonal excitation and phase variables is useful because it provides a coarse model of the much higher-dimensional states of neural populations. Conceptualizing meaning experiences as trajectories in e,θ space opens up a new approach to reasoning about linguistic phenomena.
+  The \isi{state space} is neither permanent nor a physical space. It is a heuristic tool that we construct strategically to meet the needs of a given analysis. Describing [Al], [drinks], and [coffee] with orthogonal excitation and phase variables is useful because it provides a coarse model of the much higher-di\-men\-sional states of neural populations. Conceptualizing meaning experiences as trajectories in e,θ space opens up a new approach to reasoning about linguistic phenomena.
 
 \subsection{Relational meaning experiences are relative phase-configurations}
 
@@ -128,7 +127,7 @@ Individual concept meaning experiences rarely occur in isolation. The production
 \label{tab:1:1}
 \end{table}
 
-  The ϕ-configurational basis for differences in \isi{relational meaning} between [Al][drinks] and [coffee][drinks] is illustrated in {\figref{fig:2:8}}. Crucially, [Al][drinks] and [coffee][drinks] ϕ-configurations remain constant despite the fact that all three θ variables are changing. Constant ϕ, when stable over time periods on the order of τ\textsubscript{θ}, gives rise to the experience of \isi{relational meaning} between systems, as long as those systems are excited. Note that ϕ-configurations are periodic trajectories in θ space, but we can also construct a ϕ space in which a stable ϕ-configuration is a point. Moreover, because θ dimensions are circular, wrapping around the interval [0, 2π], ϕ patterns can also be represented as a static phase difference on a unit circle, as in {\figref{fig:2:8}}. In such representations we choose some system as a reference, and the phase angles of all other systems are shown relative to the phase of the reference system. For visual clarity, we depict systems with a +ϕ configuration as having a small ϕ separation, as with [Al] and [drinks] in {\figref{fig:2:8}}.
+  The ϕ-configurational basis for differences in \isi{relational meaning} between [Al]\linebreak\relax[drinks] and [coffee][drinks] is illustrated in {\figref{fig:2:8}}. Crucially, [Al][drinks] and [coffee][drinks] ϕ-configurations remain constant despite the fact that all three θ variables are changing. Constant ϕ, when stable over time periods on the order of τ\textsubscript{θ}, gives rise to the experience of \isi{relational meaning} between systems, as long as those systems are excited. Note that ϕ-configurations are periodic trajectories in θ space, but we can also construct a ϕ space in which a stable ϕ-configuration is a point. Moreover, because θ dimensions are circular, wrapping around the interval [0, 2π], ϕ patterns can also be represented as a static phase difference on a unit circle, as in {\figref{fig:2:8}}. In such representations we choose some system as a reference, and the phase angles of all other systems are shown relative to the phase of the reference system. For visual clarity, we depict systems with a +ϕ configuration as having a small ϕ separation, as with [Al] and [drinks] in {\figref{fig:2:8}}.
 
   
 \begin{figure}
@@ -164,7 +163,7 @@ Both c- and s-systems have e and θ state variables, and these are derived in th
 \end{figure}
  
 
-  In contrast to the full population of c-systems, the full population of s-systems is spatially localized, possibly in inferior frontal gyrus, or in basal ganglia-thalamocortical circuits. Individual s-systems, i.e. subpopulations of the full s-system population, overlap to lesser degree with each other than c-systems do, and interact more strongly because of their spatial localization. 
+  In contrast to the full population of c-systems, the full population of s-systems is spatially localized, possibly in inferior frontal gyrus, or in basal ganglia-thal\-a\-mo\-cor\-ti\-cal circuits. Individual s-systems, i.e. subpopulations of the full s-system population, overlap to lesser degree with each other than c-systems do, and interact more strongly because of their spatial localization. 
 
   The c- and s-system populations project to one another, and under certain conditions c-system populations may \isi{resonate} with s-system populations, a phenomena we refer to as \textit{cs-resonance}. We assume that the capability for cs-resonance is phylogenetic, but in development, different c-systems become preferentially biased to \isi{resonate} with different types of s-systems. Furthermore, we speculate that the effects of general learning mechanisms (e.g. Hebbian spike-timing dependent synaptic plasticity), when integrated on supra-utterance timescales, differentiate the full syntactic population into various s-system subpopulations. Biases for in-phase and anti-phase coupling interactions between s-system populations are learned in this manner, giving rise to a grammar of ϕ-coupling.
 
@@ -215,14 +214,14 @@ To classify interactions between systems, we distinguish two types of coupling a
 \end{figure}
  
 
-  Equations (1) and (2) below show the roles of ϕ and e forces in influencing how θ and e variables change in time. The total ϕ and e forces a system experiences are sums over forces from pairwise interactions with other systems, plus forces from the \isi{surroundings}, \textit{S}. These forces have coupling strengths/susceptibilities $\Phi$ and $\varepsilon $, respectively. The ϕ-force from \textit{S} is assumed to be negligible, because the \isi{surroundings} are too large to exhibit a collective \isi{oscillation}. However, the \isi{surroundings} can exert non-negligible e forces. The term \textit{f\textsubscript{i}} is an \isi{intrinsic frequency} of the system (angular velocity \textit{ω} = 2π\textit{f}), representing population-internal forces which promote collective \isi{oscillation}. The operator  $\widehat {{E}}\left[\overrightarrow{{\theta}} ,\overrightarrow{{e}}\right]$ is a placeholder for mechanisms of e-organization, and we develop these in detail later on.
+  Equations (1) and (2) below show the roles of ϕ and e forces in influencing how θ and e variables change in time. The total ϕ and e forces a system experiences are sums over forces from pairwise interactions with other systems, plus forces from the \isi{surroundings}, \textit{S}. These forces have coupling strengths/susceptibilities $\Phi$ and $\varepsilon $, respectively. The ϕ-force from \textit{S} is assumed to be negligible, because the \isi{surroundings} are too large to exhibit a collective \isi{oscillation}. However, the \isi{surroundings} can exert non-negligible e forces. The term \textit{f\textsubscript{i}} is an \isi{intrinsic frequency} of the system (angular velocity \textit{ω} = 2π\textit{f}), representing population-internal forces which promote collective \isi{oscillation}. The operator  $\widehat{E}[\overrightarrow{\theta} ,\overrightarrow{e}\,]$ is a placeholder for mechanisms of e-organization, and we develop these in detail later on.
 
 \eabox{$$
 {\dot{{\theta}} }_{i}={2{\pi f}}_{i}+{F}_{{\phi S}}\left(S,{\theta} _{i}\right)+\sum _{j}{{{\Phi} _{{ij}}F}_{\phi} \left({\phi} _{{ij}},{e}_{i},{e}_{j}\right)}
 $$}
 
 \eabox{$$
-{\dot{{e}}}_{i}=\text{Ê}\left[\overrightarrow{{\theta}} ,\overrightarrow{{e}}\right]+{F}_{{eS}}\left(S,{e}_{i}\right)+\sum _{j}{{{\varepsilon} _{{ij}}F}_{e}\left({\phi} _{{ij}},{e}_{i},{e}_{j}\right)}
+{\dot{{e}}}_{i}=\text{Ê}\left[\overrightarrow{{\theta}} ,\overrightarrow{{e}}\,\right]+{F}_{{eS}}\left(S,{e}_{i}\right)+\sum _{j}{{{\varepsilon} _{{ij}}F}_{e}\left({\phi} _{{ij}},{e}_{i},{e}_{j}\right)}
 $$}
 
   Some properties of ϕ- and e-coupling can be derived from our \isi{microscale conceptualization}. For one, the valences of ϕ and e forces (i.e. the signs of elements of matrices $\Phi$ and $\varepsilon $) are correlated: attractive and mutually excitatory coupling tend to co-occur, and repulsive and mutually inhibitory coupling tend to co-occur. The basis for this correlation is the association of [+] valence forces with predominantly excitatory post-synaptic targets of interpopulation synapses, and conversely the association of [-] valence forces with predominantly inhibitory neurons as post-synaptic targets. These microscale patterns are illustrated in {\figref{fig:2:14}}. When the excitatory neurons in population A project primarily to excitatory neurons in population B, the effect of spikes of neurons in A is to attract θ\textsubscript{B} to θ\textsubscript{A} and augment e\textsubscript{B}; when excitatory neurons in B project primarily to inhibitory neurons in B, their effect is to repel θ\textsubscript{B} from θ\textsubscript{A} and diminish e\textsubscript{B}. 
@@ -253,7 +252,7 @@ With the conceptual tools outlined above we can construct a new understanding of
 \end{figure}
  
 
-  Importantly, a ϕ pattern alone is not sufficient for a \isi{relational meaning} experience. In addition, the pattern must be stationary in a local epoch of time. For a pattern to be stationary, there must be a \isi{stabilizing mechanism}, and s-systems provide this mechanism. Recall the dynamic equation for θ. In general, the intrinsic frequencies \textit{f}\textsubscript{i} of any two systems are not the same and fluctuations in \isi{surroundings} forces constantly perturb their phase velocities $\dot{\theta}_i$. In the absence of coupling forces, \isi{intrinsic frequency} differences and \isi{surroundings} perturbations cause ϕ to drift. In contrast, with the strong coupling of cs-resonances, c-system and s-system phase velocities $\dot{\theta}_i$ equalize to a compromise $\dot{\theta}_i$, the value of which depends on the relative strengths of the forces and the intrinsic frequencies. This will hold as long as the coupling forces—which act to equalize \isi{phase velocity}—are strong compared to the perturbing forces. Thus given sufficiently strong coupling forces, a ϕ-configuration will remain stable.
+  Importantly, a ϕ pattern alone is not sufficient for a \isi{relational meaning} experience. In addition, the pattern must be stationary in a local epoch of time. For a pattern to be stationary, there must be a \isi{stabilizing mechanism}, and s-systems provide this mechanism. Recall the dynamic equation for θ. In general, the intrinsic frequencies \textit{f}\textsubscript{i} of any two systems are not the same and fluctuations in \isi{surroundings} forces constantly perturb their phase velocities $\dot{\theta}_i$. In the absence of coupling forces, \isi{intrinsic frequency} differences and \isi{surroundings} perturbations cause ϕ to drift. In contrast, with the strong coupling of cs-resonances, c-system and s-system phase velocities $\dot{\theta}_i$ equalize to a compromise $\dot{\theta}_i$, the value of which depends on the relative strengths of the forces and the intrinsic frequencies. This will hold as long as the coupling forces -- which act to equalize \isi{phase velocity} -- are strong compared to the perturbing forces. Thus given sufficiently strong coupling forces, a ϕ-configuration will remain stable.
 
 \subsection{Interference and differentiation}
 
@@ -284,9 +283,9 @@ The principle of \isi{quantal excitation} is based on a conjecture that there ex
   Two levels of the potential representation have a special  interpretation. The lowest level of the potential is the \textit{ground level}, and systems on this level are by definition in an active, unexcited state. Ground state systems have at least the minimal e value required for collective \isi{oscillation}, but do not have sufficient e to participate in a stable ϕ-configuration. There are no “systems” below the ground level, because a system by definition is a population which exhibits collective \isi{oscillation}. We distinguish \textit{ground level} systems from \textit{excited} systems, which have sufficient excitation to participate in stable ϕ-configurations. The highest level of the potential is called the \textit{selection level}, and systems on this level have sufficient excitation to induce the selection of gestural/motor systems which are associated with a c-system. The four main classes of excitation states are summarized in {\tabref{tab:1:2}}.
 
 \begin{table}
-\begin{tabularx}{\textwidth}{llQ}
+\begin{tabularx}{\textwidth}{lQ}
 \lsptoprule
-\textbf{state} & \textbf{description}\\
+State & Description\\
 \midrule 
 inactive & system is undefined. no collective \isi{oscillation}\\
 ground-level (active) & system is active, but not not in an \isi{excited state}.
@@ -321,9 +320,9 @@ gates open for simulation or execution of associated gestural/motor systems\\
 
 \subsection{Canonical reorganization}
 
-While the \isi{stabilizing regime} of Ê enforces an approximate temporal invariance on e, a \isi{reorganization regime} of Ê causes intermittent, abrupt changes in e. These changes map e-configurations to e-configurations in predictable ways. Reorganization mappings cause changes in e-configuration which are discontinuities on the ϕ-timescale. We refer to the stable periods of time between these discontinuities as e-epochs. We are interested here in the various forms that reorganization mappings can take, and in what aspects of the system state they might depend on. In general, reorganization operations could depend on all θ and e variables of all active and excited systems—i.e. the full system state. However, we can infer that some information is typically not relevant to the mapping. 
+While the \isi{stabilizing regime} of Ê enforces an approximate temporal invariance on e, a \isi{reorganization regime} of Ê causes intermittent, abrupt changes in e. These changes map e-configurations to e-configurations in predictable ways. Reorganization mappings cause changes in e-configuration which are discontinuities on the ϕ-timescale. We refer to the stable periods of time between these discontinuities as e-epochs. We are interested here in the various forms that reorganization mappings can take, and in what aspects of the system state they might depend on. In general, reorganization operations could depend on all θ and e variables of all active and excited systems -- i.e. the full system state. However, we can infer that some information is typically not relevant to the mapping. 
 
-  The default mechanism for ordering the selection of systems is the \isi{canonical reorganization} mapping, Ê\textsuperscript{cr}. θ/ϕ information is irrelevant for \isi{canonical reorganization}. The operation  can be understood as follows, using the utterance \textit{Al drinks coffee} as an example. First, assume the initial condition in epoch (e1), an e-configuration which is stabilized by the stabilization regime Ê. In epoch (e1), [Al]\{N\} has selection-level excitation, and this drives the excitation of motoric/gestural systems associated with [Al]. Feedback resulting directly or indirectly from motoric/gestural excitation eventually causes a transition to the canonical \isi{reorganization regime}. The canonical re-organization mapping Ê\textsuperscript{cr} causes an abrupt change from epoch (e1) to epoch (e2), in which the selection-level system is \textit{demoted} to the lowest \isi{excited state}, and all other excited systems are \textit{promoted} one level. Ê\textsuperscript{cr} applies to transitions from (e2) to (e3) and from (e3) to (e4) as well. Note that Ê\textsuperscript{cr} produces a cycle when iterated: e\textsubscript{1}, e\textsubscript{2}, … e\textsubscript{n}, e\textsubscript{1}… 
+  The default mechanism for ordering the selection of systems is the \isi{canonical reorganization} mapping, Ê\textsuperscript{cr}. θ/ϕ information is irrelevant for \isi{canonical reorganization}. The operation  can be understood as follows, using the utterance \textit{Al drinks coffee} as an example. First, assume the initial condition in epoch (e1), an e-configuration which is stabilized by the stabilization regime Ê. In epoch (e1), [Al]\{N\} has selection-level excitation, and this drives the excitation of motoric/gestural systems associated with [Al]. Feedback resulting directly or indirectly from motoric/gestural excitation eventually causes a transition to the canonical \isi{reorganization regime}. The canonical re-organization mapping Ê\textsuperscript{cr}\linebreak causes an abrupt change from epoch (e1) to epoch (e2), in which the selection-level system is \textit{demoted} to the lowest \isi{excited state}, and all other excited systems are \textit{promoted} one level. Ê\textsuperscript{cr} applies to transitions from (e2) to (e3) and from (e3) to (e4) as well. Note that Ê\textsuperscript{cr} produces a cycle when iterated: e\textsubscript{1}, e\textsubscript{2}, … e\textsubscript{n}, e\textsubscript{1}… 
 
   
 \begin{figure}
@@ -338,7 +337,7 @@ While the \isi{stabilizing regime} of Ê enforces an approximate temporal invari
   There are a couple alternative formal approaches to representing reorganization mappings. One is to define a relative \isi{quantal excitation} state vector  $\overrightarrow{{e}}$, where each dimension corresponds to a different excited cs-system. The value in a dimension is an integer from 1 to \textit{n}, where \textit{n} is the number of s-systems which occupy distinct e-levels, and the value corresponds to excitation rank order of the corresponding system. The \isi{canonical reorganization} mapping in this scheme is given in (3).
 
 \eabox{$$
-{\text{Ê}}^{{cr}}\left(\overrightarrow{{e}}\right):e\rightarrow \left[e{mod}n\right]+1
+{\text{Ê}}^{{cr}}\left(\overrightarrow{{e}}\,\right):e\rightarrow \left[e\bmod n\right]+1
 $$}
 
   Another formalization uses a cyclic permutation matrix. In this case we define the e-state as a binary matrix Ë, as shown in (4), where each column corresponds to a level of the e-potential and each row to a system (so, a value of 1 in row \textit{n}, column \textit{m}, entails that system \textit{n} occupies excitation level \textit{m}). Repeated action of the permutation matrix Ê on Ë results in a return to the initial pattern. 
@@ -391,7 +390,7 @@ The o/el framework provides two conceptual models of the temporality of speech, 
 \end{figure}
  
 
-  In conventional approaches, there are diverse perspectives on how \isi{linearization} (selection/ordering) and structure building/variable binding (\isi{relational meaning}) interact, but these are generally understood to create and operate on structures of connected objects. The o/el model provides an alternative framework for thinking about the interaction between \isi{relational meaning} and temporal order, one specific to ϕ-organization, the other specific to e-organization. Because ϕ-epochs tend to span multiple e-epochs, it is not easy, nor even useful to combine them into a single space for visualization. One approach would be to map relative excitation to oscillator amplitude, in which case we can visualize the temporal evolution as in {\figref{fig:2:21}}.
+  In conventional approaches, there are diverse perspectives on how \isi{linearization} (selection/ordering) and structure building/variable binding (\is{relational meaning}relational\linebreak meaning) interact, but these are generally understood to create and operate on structures of connected objects. The o/el model provides an alternative framework for thinking about the interaction between \isi{relational meaning} and temporal order, one specific to ϕ-organization, the other specific to e-organization. Because ϕ-epochs tend to span multiple e-epochs, it is not easy, nor even useful to combine them into a single space for visualization. One approach would be to map relative excitation to oscillator amplitude, in which case we can visualize the temporal evolution as in {\figref{fig:2:21}}.
 
   
 \begin{figure}
@@ -404,33 +403,20 @@ The o/el framework provides two conceptual models of the temporality of speech, 
   This corkscrew visualization is too cluttered to be of much use, so instead we often juxtapose e-potential and ϕ{}-circle representations. These representations are analytical tools which encourage us to think differently about speech. Word order, instead of being a \isi{spatial arrangement} of objects, is understood as a discontinuous trajectory in excitation space. Meaning relations, instead of being connections between objects, are experiences of stable relative phases of system oscillations.
 
 \section{Conventions and terminology}
-
-\textit{A}: \isi{order parameter} of a system
-
-\noindent \textit{S}: \isi{surroundings}
-
-\noindent θ, r: phase, radial amplitude of oscillatory component of \isi{order parameter}
-
-\noindent e: excitation component of \isi{order parameter}
-
-\noindent ϕ: \isi{relative phase}
-
-\noindent c-system: \isi{concept system}, written in square brackets, e.g. [coffee], [drink]
-
-\noindent s-system: \isi{syntactic system}, written in curly brackets, e.g. \{-N\}, \{V\}
-
-\noindent cs-system: pair of resonating c- and s-systems, e.g. [drink]\{V\}, [coffee]\{-N\}
-
-\noindent cs-systems in a stable-configuration: {\textbar}drink coffee{\textbar}
-
-\noindent Utterances: written italicized text, e.g. \textit{Al drinks coffee}
-
-\noindent +ϕ-coupling/configuration: in-phase (attractive, proximal) coupling/configuration
-
-\noindent {}-ϕ-coupling/configuration: anti-phase (repulsive, distal) coupling/configuration
-
-\noindent +e-coupling: excitatory e-coupling
-
-\noindent {}-e-coupling: inhibitory e-coupling
-
-\noindent $\widehat {{E}}$: e-organization operator
+\begin{tabularx}{\textwidth}{@{}lQ@{}}
+\textit{A} &  order parameter of a system\\
+\textit{S} &  surroundings\\
+θ, r &  phase, radial amplitude of oscillatory component of order parameter\\
+e &  excitation component of {order parameter}\\
+ϕ &  relative phase\\
+c-system &  concept system, written in square brackets, e.g. [coffee], [drink]\\
+s-system &  syntactic system, written in curly brackets, e.g. \{-N\}, \{V\}\\
+cs-system &  pair of resonating c- and s-systems, e.g. [drink]\{V\}, [coffee]\{-N\}\\
+cs-systems in a stable-configuration &  {\textbar}drink coffee{\textbar}\\
+Utterances &  written italicized text, e.g. \textit{Al drinks coffee}\\
++ϕ-coupling/configuration &  in-phase (attractive, proximal) coupling/configuration\\
+{}-ϕ-coupling/configuration &  anti-phase (repulsive, distal) coupling/configuration\\
++e-coupling &  excitatory e-coupling\\
+{}-e-coupling &  inhibitory e-coupling\\
+$\widehat {{E}}$ &  e-organization operator
+\end{tabularx}\is{order parameter}\is{surroundings}\is{relative phase}\is{concept system}\is{syntactic system}
