@@ -429,29 +429,29 @@ Scrambling: & \textit{Al, Bo, drinks coffee, knows.}\\
 
   Recall from previous chapters that we have posited several regimes of the e-organization operator. The \isi{stabilizing regime}, which applies within e-epochs, maps e-con\-fig\-u\-ra\-tions to themselves. The canonical \isi{reorganization regime} Ê\textsuperscript{cr} demotes selected systems to the lowest above-ground level and promotes all other excited systems one level. The \isi{selective reorganization} regime Ê\textsuperscript{sr} demotes some systems to ground and promotes some grounded system(s) to excited states. Reiterative simulation results from iterated application of Ê\textsuperscript{cr} and Ê\textsuperscript{sr}. We also posited an \isi{initial organization operator} Ê\textsuperscript{io} to map from a pre-stable state to a stable, discrete configuration.
 
-  The operators Ê\textsuperscript{cr} and Ê\textsuperscript{sr} can be decomposed into more basic, element-wise promotion and demotion operators, ↑ and ↓. Generally, any reorganization operation can be characterized based on whether the systems in its domain (inputs) and range (outputs) are ground-level, excited, or selected systems. This results in 3 distinct domain and range patterns, a total of 9 possibilities. The {\tabref{tab:5:4}} summarizes the classification:
+  The operators Ê\textsuperscript{cr} and Ê\textsuperscript{sr} can be decomposed into more basic, element-wise promotion and demotion operators, ↑ and ↓. Generally, any reorganization operation can be characterized based on whether the systems in its domain (inputs) and range (outputs) are ground-level, excited, or selected systems. This results in 3 distinct domain and range patterns, a total of 9 possibilities. The {\tabref{tab:5:4}} summarizes the classification.
 
 \begin{table}
 \small
 \begin{tabularx}{\textwidth}{c c@{~}c@{~}c c@{~}c@{~}c X}
 \lsptoprule
-& \multicolumn{3}{c}{ input} & \multicolumn{3}{c}{ output} & \\
+& \multicolumn{3}{c}{input} & \multicolumn{3}{c}{output} & \\
 & ground & excited & selected & ground & excited & selected & \\
+\midrule
+ $\Uparrow $ & + & \textminus & \textminus & \textminus & + & + & \isi{ungrounding promotion}\\
+&  &  &  & \textminus & + & \textminus & \\
 \hline
- $\Uparrow $ & + & {}- & {}- & {}- & + & + & \isi{ungrounding promotion}\\
-&  &  &  & {}- & + & {}- & \\
-\hline
- 1 & + & {}- & {}- & + & {}- & {}- & identity\\
+ 1 & + & \textminus & \textminus & + & \textminus & \textminus & identity\\
  \hline
- ↑ & {}- & + & {}- & {}- & + & + & canonical promotion\\
-&  &  &  & {}- & + & {}- & \\
+ ↑ & \textminus & + & \textminus & \textminus & + & + & canonical promotion\\
+&  &  &  & \textminus & + & \textminus & \\
 \hline
- $\Downarrow $ & {}- & + & {}- & + & {}- & {}- & \isi{grounding demotion}\\
-& {}- & + & + &  &  &  & \\
+ $\Downarrow $ & \textminus & + & \textminus & + & \textminus & \textminus & \isi{grounding demotion}\\
+& \textminus & + & + &  &  &  & \\
 \hline
- 1 & {}- & + & + & {}- & + & + & identity\\
+ 1 & \textminus & + & + & \textminus & + & + & identity\\
  \hline
- ↓ & {}- & + & + & {}- & + & {}- & canonical demotion\\
+ ↓ & \textminus & + & + & \textminus & + & \textminus & canonical demotion\\
 \lspbottomrule
 \end{tabularx}
 \caption{Classification of reorganization operations.}\label{tab:5:4}
@@ -473,4 +473,3 @@ Scrambling: & \textit{Al, Bo, drinks coffee, knows.}\\
   The applications of reorganization operations employed in the above analyses raise the question of what constraints there are on Ê. Although we do not systematically pursue this question in great detail, one clear generalization is that promotion and demotion co-occur and often affect similar subsystems in a given transition. This makes sense given that we view e-operations as the consequence of e-coupling forces, and that e-coupling forces are expected to be stronger between more similar systems. We have also imposed a number of analytic choices which warrant further scrutiny. For instance, we have assumed that once the selective regime of production begins, no epochs without a selected system occur. This assumption could be violated, and one can imagine decomposing each Ê into an ordered sequence of operations on individual systems. The order of these operations could matter.
 
   Clearly a principled theory of constraints on reorganization operations is desirable, and in the absence of such a theory the reorganization mechanism seems overly powerful. For the time being, we can decide to accept this because we have not mistakenly imposed structure where none is present. Whereas the conventional view is that \textsc{Merge} operations on objects are the fundamental mechanism of ordering, the o/el view is that order emerges from operations on relative excitation, which are ultimately forces which guide trajectories in a \isi{state space}.
-
