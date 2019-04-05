@@ -711,7 +711,7 @@
 }
 \fi
 %% Provides \setmathfont
-\usepackage{unicode-math}
+\usepackage[math-style=upright]{unicode-math}
 \fi
 
 \iflsNewtxmath
