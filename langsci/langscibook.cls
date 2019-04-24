@@ -1759,7 +1759,7 @@ width=.8\textwidth
 	pdfusetitle=true,  % puts author and title in automatically, maybe only in final mode?
 	pdfkeywords={},
 	pdfpagelayout=TwoPageRight,   % first page is separate
-	hypertexnames=false, % better housekeeping of main.toc, required for paperappendix
+% % 	hypertexnames=false, % better housekeeping of main.toc, required for paperappendix
 	%ps2pdf=true
 	]{hyperref}
 
